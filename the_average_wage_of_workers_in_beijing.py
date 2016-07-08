@@ -31,7 +31,14 @@ class BJWorksAverageWage():
                 year = datetime.strptime(tr[0][0][0].text,'%Y')
                 wage = float(tr[1][0][0].text)
                 self.wagelist.loc[year] = [wage]
-        print(self.wagelist.index)
+
+    def save(self):
+        pass
+
+    def plot(self):
+        import matplotlib.pyplot as plt
+        plt.figure()
+        self.wagelist.plot()
 
 def main():
     bjwaw = BJWorksAverageWage()
