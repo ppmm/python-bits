@@ -1,5 +1,3 @@
-# python-bits
-一些python的碎片代码、思维碎片、随想笔记、天马行空......
 
 ## anova_test.py
 方差检验
